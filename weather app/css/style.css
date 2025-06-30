@@ -3,3 +3,44 @@
     scroll-behavior: smooth;
 }
 
+
+
+div.navbar-nav {
+    margin-right: 100px;
+}
+
+.dark-mode-logo .dark-mode-toggle {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.dark-mode-logo .switch {
+    position: fixed;
+    cursor: pointer;
+    top: 35px;
+    right: 75px;
+    z-index: 99999999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.dark-mode-logo .switch .fa-moon {
+    display: inline-block;
+}
+
+.dark-mode-logo .switch .fa-sun {
+    display: none;
+}
+
+.dark-mode-toggle:checked ~ .switch .fa-moon {
+    display: none;
+}
+
+.dark-mode-toggle:checked ~ .switch .fa-sun {
+    color: white !important;
+    display: inline-block;
+}
