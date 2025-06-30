@@ -102,7 +102,7 @@ main .main-content {
 
 #today-temp {
     font: 500 200px 'Fira Sans', sans-serif;
-    color: #444;
+    color: #666;
 }
 
 #weather-type {
@@ -134,5 +134,9 @@ main .main-content {
 
 .weather-temp {
     font: 500 20px 'Fira Sans', sans-serif;
+    color: #444;
+}
+
+.weather-details {
     color: #555;
 }
