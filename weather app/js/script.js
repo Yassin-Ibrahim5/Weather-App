@@ -27,4 +27,4 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("mode").addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
     console.log(document.body.classList)
-})
+});
