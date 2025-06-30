@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/all.min.css">
@@ -19,7 +19,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body d-flex justify-content-between align-items-center position-sticky w-100">
     <div class="container-fluid d-flex">
-        <a class="navbar-brand logo" href="#"><img src="images/favicon.png" alt="weather icon"
+        <a class="navbar-brand logo d-flex align-items-center" href="#"><img src="images/favicon.png" alt="weather icon"
                                                    style="width: 70px;">Weather</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,11 +54,27 @@
                 <button class="btn btn-primary px-4">Search</button>
             </div>
         </div>
-        <div class="row d-flex justify-content-center align-items-center w-100 mt-5">
-            <div class="col-md-12">
-                <h1 class="text-center">Weather in <span id="city-name"></span></h1>
-                <h2 class="text-center" id="temp"></h2>
-                <h3 class="text-center" id="description"></h3>
+
+        <div class="heading-info row d-flex justify-content-between align-items-center w-100 mt-5">
+            <div class="col-md-4">
+                <span id="city-name">Cairo</span>
+            </div>
+            <div class="col-md-4">
+                <span id="date">21.04.2025</span>
+            </div>
+            <div class="col-md-4">
+                <span id="welcome-msg" class="fw-semibold">Good Morning</span>
+            </div>
+        </div>
+
+        <div class="weather-info row d-flex justify-content-center align-items-center w-100 mt-5">
+            <div class="col-md-8">
+                <div class="text-center">
+                    <h2 id="today-temp">20</h2>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3 id="current-time">12:27 PM</h3>
             </div>
         </div>
 
