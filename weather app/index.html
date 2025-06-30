@@ -47,7 +47,7 @@
 
 <main id="home">
     <div class="container bg-white mt-4 main-content text-center p-4">
-        <div class="row d-flex justify-content-center align-items-center w-100">
+        <div class="row search-row d-flex justify-content-center align-items-center w-100">
             <div class="col-lg-11 col-md-10 col-6">
                 <input type="text" class="form-control" placeholder="Enter your city" id="city-input">
             </div>
@@ -69,16 +69,16 @@
         </div>
 
         <div class="weather-info row d-flex justify-content-center align-items-center w-100">
-            <div class="col-md-8">
+            <div class="col-md-8 col-12">
                 <h2 id="today-temp" class="text-center"></h2>
-                <h2 id="weather-type" class="text-center">Cloudy</h2>
+                <h2 id="weather-type" class="text-center"></h2>
                 <div class="three-day-forecast">
                     <div class="row d-flex justify-content-center align-items-center w-100 mt-3">
                         <div class="col-md-3 day-forecast today day-0">
                             <h6 class="fw-bolder">Today</h6>
                             <div>
                                 <h4 class="weather-temp">
-                                    <span class="temp-max"></span> / <span class="temp-min"></span>
+                                    <span class="temp-max">20°C</span> / <span class="temp-min"> 10°C</span>
                                 </h4>
                             </div>
                             <h6 class="weather-subtitle">Cloudy</h6>
@@ -87,7 +87,7 @@
                             <h6 id="tomorrow">Tuesday</h6>
                             <div>
                                 <h4 class="weather-temp">
-                                    <span class="temp-max"></span> / <span class="temp-min"></span>
+                                    <span class="temp-max">20°C</span> / <span class="temp-min"> 10°C</span>
                                 </h4>
                             </div>
                             <h6 class="weather-subtitle">Cloudy</h6>
@@ -96,7 +96,7 @@
                             <h6 id="after-tomorrow">Wednesday</h6>
                             <div>
                                 <h4 class="weather-temp">
-                                    <span class="temp-max"></span> / <span class="temp-min"></span>
+                                    <span class="temp-max">20°C</span> / <span class="temp-min"> 10°C</span>
                                 </h4>
                             </div>
                             <h6 class="weather-subtitle">Cloudy</h6>
@@ -124,41 +124,95 @@
                 </div>
                 <div class="mt-2">
                     <h3 class="text-center hourly-header">Hourly Forecast</h3>
-                    <div class="container-fluid mt-3 hourly-forecast">
-                        <div class="row d-flex justify-content-center align-items-center w-100">
-                            <div class="col-md-3 hour-forecast">
-                                <h6 class="hour">12:00 AM</h6>
-                                <h4 class="weather-temp">20°C</h4>
-                                <h6 class="weather-subtitle">Cloudy</h6>
+                    <div class="carousel carousel-dark slide" id="hours-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container-fluid mt-3 hourly-forecast">
+                                    <div class="row d-flex justify-content-center align-items-center w-100">
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">12:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">1:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">2:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex justify-content-center align-items-center w-100">
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">12:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">1:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">2:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3 hour-forecast">
-                                <h6 class="hour">1:00 AM</h6>
-                                <h4 class="weather-temp">20°C</h4>
-                                <h6 class="weather-subtitle">Cloudy</h6>
-                            </div>
-                            <div class="col-md-3 hour-forecast">
-                                <h6 class="hour">2:00 AM</h6>
-                                <h4 class="weather-temp">20°C</h4>
-                                <h6 class="weather-subtitle">Cloudy</h6>
+                            <div class="carousel-item">
+                                <div class="container-fluid mt-3 hourly-forecast">
+                                    <div class="row d-flex justify-content-center align-items-center w-100">
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">12:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">1:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">2:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex justify-content-center align-items-center w-100">
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">12:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">1:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                        <div class="col-md-3 hour-forecast">
+                                            <h6 class="hour">2:00 AM</h6>
+                                            <h4 class="weather-temp">20°C</h4>
+                                            <h6 class="weather-subtitle">Cloudy</h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-center align-items-center w-100">
-                            <div class="col-md-3 hour-forecast">
-                                <h6 class="hour">12:00 AM</h6>
-                                <h4 class="weather-temp">20°C</h4>
-                                <h6 class="weather-subtitle">Cloudy</h6>
-                            </div>
-                            <div class="col-md-3 hour-forecast">
-                                <h6 class="hour">1:00 AM</h6>
-                                <h4 class="weather-temp">20°C</h4>
-                                <h6 class="weather-subtitle">Cloudy</h6>
-                            </div>
-                            <div class="col-md-3 hour-forecast">
-                                <h6 class="hour">2:00 AM</h6>
-                                <h4 class="weather-temp">20°C</h4>
-                                <h6 class="weather-subtitle">Cloudy</h6>
-                            </div>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#hours-carousel"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#hours-carousel"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
