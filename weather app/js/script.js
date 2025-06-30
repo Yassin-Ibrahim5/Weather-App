@@ -34,6 +34,12 @@ const inputCity = document.getElementById("city-input").value;
 
 const API_KEY = 'e316d97803414789b39102025253006';
 
+function getWeekDay(dateString, index) {
+    if (index === 0) return "Today";
+    if (index === 1) return "Tomorrow";
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-US", { weekday: "long" });
+}
 
 async function getWeather(city) {
     const url = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=3`;
@@ -64,25 +70,23 @@ async function getWeather(city) {
             const maxTemp = days[i].day.maxtemp_c;
             const minTemp = days[i].day.mintemp_c;
             const condition = days[i].day.condition.text;
+            const weekday = getWeekDay(date, i);
 
             let dayElement;
             if (i === 0) {
                 dayElement = document.querySelector(".day-0");
             } else if (i === 1) {
                 dayElement = document.querySelector(".day-1");
+                document.getElementById("tomorrow").innerHTML = weekday;
             } else {
                 dayElement = document.querySelector(".day-2");
+                document.getElementById("after-tomorrow").innerHTML = weekday;
             }
             dayElement.querySelector(".temp-max").innerHTML = maxTemp + "°C";
             dayElement.querySelector(".temp-min").innerHTML = minTemp + "°C";
             dayElement.querySelector("h6.weather-subtitle").innerHTML = condition;
 
         }
-
-        // document.querySelector(".three-day-forecast .day-forecast .today div h4.weather-temp .temp-max").innerHTML =
-        //     data.forecast.forecastday[0].day.maxtemp_c;
-        // document.querySelector(".three-day-forecast .day-forecast .today div h4.weather-temp .temp-min").innerHTML =
-        //     data.forecast.forecastday[0].day.mintemp_c;
     } catch (error) {
         console.log(error);
     }

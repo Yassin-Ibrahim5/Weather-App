@@ -155,6 +155,10 @@ main .main-content {
     border-color: #555;
 }
 
+.carousel-control-next {
+    right: -7%;
+}
+
 /*!*!*!*!*!*!*!*!*!*!*!* Dark Mode *!*!*!*!*!*!*!*!*!*!*!*/
 
 body[data-theme="dark"] {
@@ -229,4 +233,36 @@ body[data-theme="dark"] .weather-details {
 
 body[data-theme="dark"] h3.hourly-header {
     color: #ccc !important;
+}
+
+/*!*!*!*!*!*!*!*!*!*!*!* Media Queries *!*!*!*!*!*!*!*!*!*!*!*/
+
+@media (min-width: 992px) {
+    .main-content {
+        /*max-width: 1200px;*/
+        margin: 0 auto;
+    }
+    .day-forecast {
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    #today-temp {
+        font-size: 100px;
+    }
+
+    #weather-type {
+        font-size: 40px;
+    }
+
+    .weather-info {
+        flex-direction: column;
+    }
+
+    #chance-of-rain,
+    #wind-speed,
+    #humidity {
+        margin-left: 0 !important;
+    }
 }
