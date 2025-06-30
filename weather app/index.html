@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Weather</title>
 </head>
-<body class="bg-body-secondary" data-theme="light">
+<body class="bg-body-secondary p-0 m-0" data-theme="light">
 
-<nav class="navbar navbar-expand-lg bg-body d-flex justify-content-between align-items-center position-sticky w-100">
-    <div class="container-fluid d-flex">
+<nav class="navbar navbar-expand-lg bg-body d-flex justify-content-between align-items-center position-sticky w-100 py-0">
+    <div class="container-fluid d-flex py-0">
         <a class="navbar-brand logo d-flex align-items-center" href="#"><img src="images/favicon.png" alt="weather icon"
                                                                              style="width: 70px;" id="navbar-icon">Weather</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -27,14 +27,14 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active mx-3" aria-current="page" href="#home">Home</a>
-                <a class="nav-link mx-3" href="#">News</a>
-                <a class="nav-link mx-3" href="#">Live Cameras</a>
-                <a class="nav-link mx-3" href="#">Photos</a>
-                <a class="nav-link mx-3" href="#">Contact</a>
+                <a class="nav-link position-relative active mx-3" aria-current="page" href="#home">Home</a>
+                <a class="nav-link position-relative mx-3" href="#">News</a>
+                <a class="nav-link position-relative mx-3" href="#">Live Cameras</a>
+                <a class="nav-link position-relative mx-3" href="#">Photos</a>
+                <a class="nav-link position-relative mx-3" href="#">Contact</a>
                 <div class="dark-mode-logo">
-                    <input type="checkbox" id="mode" class="dark-mode-toggle">
-                    <label for="mode" class="switch">
+                    <input type="checkbox" id="mode" class="dark-mode-toggle position-absolute opacity-0">
+                    <label for="mode" class="switch position-fixed d-flex align-items-center">
                         <i class="fa-solid fa-moon"></i>
                         <i class="fa-solid fa-sun"></i>
                     </label>
@@ -43,7 +43,6 @@
         </div>
     </div>
 </nav>
-
 
 <main id="home">
     <div class="container bg-white mt-4 main-content text-center p-4">

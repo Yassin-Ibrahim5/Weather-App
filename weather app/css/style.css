@@ -3,25 +3,13 @@
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 /*!*!*!*!*!*!*!*!*!*!*!* Navbar *!*!*!*!*!*!*!*!*!*!*!*/
-
-.navbar,
-.navbar .container-fluid {
-    padding-top: 0;
-    padding-bottom: 0;
-}
 
 .navbar-brand.logo {
     font: 500 30px 'Montserrat', sans-serif;
 }
 
 .navbar-nav .nav-link {
-    position: relative;
     color: #777;
     font: 500 17px 'Montserrat', sans-serif;
     transition: all 0.3s ease;
@@ -64,20 +52,15 @@ div.navbar-nav {
 }
 
 .dark-mode-logo .dark-mode-toggle {
-    position: absolute;
-    opacity: 0;
     height: 0;
     width: 0;
 }
 
 .dark-mode-logo .switch {
-    position: fixed;
     cursor: pointer;
     top: 28px;
     right: 75px;
     z-index: 99999999;
-    display: flex;
-    align-items: center;
     gap: 10px;
     font-size: 25px;
 }
