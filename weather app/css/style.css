@@ -109,11 +109,29 @@ main .main-content {
     color: #444;
 }
 
-.hour-forecast {
+.hourly-forcast {
+    margin-left: 24px;
+}
+
+.hour-forecast, .day-forecast {
     border: 2px solid #777;
     border-radius: 24px;
     padding: 20px 0;
-    margin: 6px;
+    margin: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
 
+.day-forecast {
+    padding: 13px 5px !important;
+}
+
+.weather-subtitle {
+    font: 400 18px 'Fira Sans', sans-serif;
+    color: #777;
+}
+
+.weather-temp {
+    font: 500 20px 'Fira Sans', sans-serif;
+    color: #555;
 }
