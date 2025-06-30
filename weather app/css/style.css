@@ -103,20 +103,20 @@ div.navbar-nav {
 
 main .main-content {
     border-radius: 24px;
-    font-family: 'Fira Sans', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .main-content .heading-info {
-    font: 400 24px 'Fira Sans', sans-serif;
+    font: 400 24px 'Roboto', sans-serif;
 }
 
 #today-temp {
-    font: 500 200px 'Fira Sans', sans-serif;
+    font: 700 200px 'Roboto', sans-serif;
     color: #666;
 }
 
 #weather-type {
-    font: 400 50px 'Fira Sans', sans-serif;
+    font: 400 50px 'Roboto', sans-serif;
     color: #444;
 }
 
@@ -138,12 +138,12 @@ main .main-content {
 }
 
 .weather-subtitle {
-    font: 400 18px 'Fira Sans', sans-serif;
+    font: 400 18px 'Roboto', sans-serif;
     color: #777;
 }
 
 .weather-temp {
-    font: 500 20px 'Fira Sans', sans-serif;
+    font: 500 20px 'Roboto', sans-serif;
     color: #444;
 }
 
@@ -207,7 +207,7 @@ body[data-theme="dark"] .hourly-forecast .hour-forecast h4.weather-temp {
 body[data-theme="dark"] #weather-type,
 body[data-theme="dark"] .weather-subtitle,
 body[data-theme="dark"] .weather-temp,
-body[data-theme="dark"] #tomorrow-weather,
+body[data-theme="dark"] #tomorrow,
 body[data-theme="dark"] #after-tomorrow {
     color: #aaa !important;
 }
