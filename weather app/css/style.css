@@ -3,8 +3,18 @@
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /*!*!*!*!*!*!*!*!*!*!*!* Navbar *!*!*!*!*!*!*!*!*!*!*!*/
 
+.navbar,
+.navbar .container-fluid {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 .navbar-brand.logo {
     font: 500 30px 'Montserrat', sans-serif;
@@ -63,7 +73,7 @@ div.navbar-nav {
 .dark-mode-logo .switch {
     position: fixed;
     cursor: pointer;
-    top: 35px;
+    top: 28px;
     right: 75px;
     z-index: 99999999;
     display: flex;
@@ -115,7 +125,7 @@ main .main-content {
 }
 
 .hour-forecast, .day-forecast {
-    border: 2px solid #777;
+    border: 2px solid #999;
     border-radius: 24px;
     padding: 20px 0;
     margin: 5px;
@@ -124,7 +134,7 @@ main .main-content {
 }
 
 .day-forecast {
-    padding: 13px 5px !important;
+    padding: 13px 0 !important;
 }
 
 .weather-subtitle {
@@ -139,4 +149,27 @@ main .main-content {
 
 .weather-details {
     color: #555;
+}
+
+.day-forecast.today {
+    border-color: #555;
+}
+
+/*!*!*!*!*!*!*!*!*!*!*!* Dark Mode *!*!*!*!*!*!*!*!*!*!*!*/
+
+body[data-theme="dark"] .navbar-brand.logo,
+body[data-theme="dark"] .navbar-nav .nav-link,
+body[data-theme="dark"] .navbar-nav .nav-link.active {
+    color: #ccc !important;
+    transition: all 0.3s ease;
+}
+
+body[data-theme="dark"] .navbar-nav .nav-link:hover::after,
+body[data-theme="dark"] .navbar-nav .nav-link.active::after {
+    background-color: #ccc;
+}
+
+body[data-theme="dark"] .navbar,
+body[data-theme="dark"] .navbar .container-fluid {
+    background-color: #222;
 }

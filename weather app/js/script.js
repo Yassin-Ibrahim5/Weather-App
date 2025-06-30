@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.getElementById("mode").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    console.log(document.body.classList)
+    document.body.dataset.theme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
+    console.log(document.body.dataset.theme);
+    document.getElementById("navbar-icon").src = document.body.dataset.theme === 'light' ? "images/favicon.png" : "images/favicon-dark.png";
 });
