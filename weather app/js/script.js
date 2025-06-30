@@ -37,7 +37,7 @@ const API_KEY = 'e316d97803414789b39102025253006';
 
 async function getWeather(city) {
     const url = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=3`;
-
+    document.getElementById("city-name").innerHTML = city;
     try {
         const response = await fetch(url);
         const data = await response.json();
