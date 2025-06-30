@@ -23,3 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("hashchange", setActiveLink)
 });
+
+document.getElementById("mode").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    console.log(document.body.classList)
+})
