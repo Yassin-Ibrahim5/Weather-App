@@ -5,11 +5,14 @@
 
 /*!*!*!*!*!*!*!*!*!*!*!* Navbar *!*!*!*!*!*!*!*!*!*!*!*/
 
+.navbar-brand.logo {
+    font: 500 30px 'Montserrat', sans-serif;
+}
+
 .navbar-nav .nav-link {
     position: relative;
     color: #777;
-    font-weight: 600;
-    font-size: 17px;
+    font: 500 17px 'Open Sans', sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -42,6 +45,7 @@
 .navbar-nav .nav-link.active {
     color: #000 !important;
     transition: all 0.3s ease;
+    font-weight: 600;
 }
 
 div.navbar-nav {
@@ -86,3 +90,6 @@ div.navbar-nav {
 
 /*!*!*!*!*!*!*!*!*!*!*!* Main Content *!*!*!*!*!*!*!*!*!*!*!*/
 
+main .main-content {
+    border-radius: 24px;
+}
