@@ -120,7 +120,7 @@ main .main-content {
     color: #444;
 }
 
-.hourly-forcast {
+.hourly-forecast {
     margin-left: 24px;
 }
 
@@ -157,6 +157,10 @@ main .main-content {
 
 /*!*!*!*!*!*!*!*!*!*!*!* Dark Mode *!*!*!*!*!*!*!*!*!*!*!*/
 
+body[data-theme="dark"] {
+    background-color: #151515 !important;
+}
+
 body[data-theme="dark"] .navbar-brand.logo,
 body[data-theme="dark"] .navbar-nav .nav-link,
 body[data-theme="dark"] .navbar-nav .nav-link.active {
@@ -172,4 +176,57 @@ body[data-theme="dark"] .navbar-nav .nav-link.active::after {
 body[data-theme="dark"] .navbar,
 body[data-theme="dark"] .navbar .container-fluid {
     background-color: #222;
+}
+
+body[data-theme="dark"] .main-content {
+    background-color: #333 !important;
+}
+
+body[data-theme="dark"] input.form-control:focus {
+    border-color: #0a58ca !important;
+    box-shadow: 0 0 0 0.25rem rgba(10, 88, 202, 0.25) !important;
+}
+
+body[data-theme="dark"] .btn.btn-primary {
+    background-color: #0a58ca !important;
+}
+
+body[data-theme="dark"] .btn.btn-primary:hover {
+    background-color: #0a40ca !important;
+    border-color: #0a40ca !important;
+}
+
+body[data-theme="dark"] #today-temp,
+body[data-theme="dark"] .three-day-forecast .today h6.fw-bolder,
+body[data-theme="dark"] .three-day-forecast .today h4.weather-temp,
+body[data-theme="dark"] .hourly-forecast .hour-forecast h6.hour,
+body[data-theme="dark"] .hourly-forecast .hour-forecast h4.weather-temp {
+    color: white !important;
+}
+
+body[data-theme="dark"] #weather-type,
+body[data-theme="dark"] .weather-subtitle,
+body[data-theme="dark"] .weather-temp,
+body[data-theme="dark"] #tomorrow-weather,
+body[data-theme="dark"] #after-tomorrow {
+    color: #aaa !important;
+}
+
+body[data-theme="dark"] .day-forecast.today {
+    border-color: white !important;
+}
+
+body[data-theme="dark"] #city-name,
+body[data-theme="dark"] #date,
+body[data-theme="dark"] #welcome-msg,
+body[data-theme="dark"] #current-time {
+    color: #aaa !important;
+}
+
+body[data-theme="dark"] .weather-details {
+    color: #ccc !important;
+}
+
+body[data-theme="dark"] h3.hourly-header {
+    color: #ccc !important;
 }

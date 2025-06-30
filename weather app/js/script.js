@@ -29,3 +29,7 @@ document.getElementById("mode").addEventListener("click", () => {
     console.log(document.body.dataset.theme);
     document.getElementById("navbar-icon").src = document.body.dataset.theme === 'light' ? "images/favicon.png" : "images/favicon-dark.png";
 });
+
+document.getElementById("search").addEventListener("click", () => {
+    document.getElementById("search-form").classList.toggle("active");
+});
