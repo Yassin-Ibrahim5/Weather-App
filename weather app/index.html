@@ -20,7 +20,7 @@
 <nav class="navbar navbar-expand-lg bg-body d-flex justify-content-between align-items-center position-sticky w-100">
     <div class="container-fluid d-flex">
         <a class="navbar-brand logo d-flex align-items-center" href="#"><img src="images/favicon.png" alt="weather icon"
-                                                   style="width: 70px;">Weather</a>
+                                                                             style="width: 70px;">Weather</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,10 +47,10 @@
 <main id="home">
     <div class="container bg-white mt-5 main-content text-center p-4">
         <div class="row d-flex justify-content-center align-items-center w-100">
-            <div class="col-md-11">
+            <div class="col-lg-11 col-md-10 col-6">
                 <input type="text" class="form-control" placeholder="Enter your city" id="city-input">
             </div>
-            <div class="col-md-1">
+            <div class="col-lg-1 col-md-2 col-6">
                 <button class="btn btn-primary px-4">Search</button>
             </div>
         </div>
@@ -69,12 +69,30 @@
 
         <div class="weather-info row d-flex justify-content-center align-items-center w-100 mt-5">
             <div class="col-md-8">
-                <div class="text-center">
-                    <h2 id="today-temp">20</h2>
-                </div>
+                <h2 id="today-temp"><span class="text-center">20 </span>°</h2>
+                <h2 id="weather-type" class="text-center">Cloudy</h2>
             </div>
-            <div class="col-md-4 text-center">
-                <h3 id="current-time">12:27 PM</h3>
+            <div class="col-md-4">
+                <h3 id="current-time" class="text-center">12:27 PM</h3>
+                <div class="hourly-forcast mt-5">
+                    <h3 class="text-center">Hourly Forecast</h3>
+                    <div class="container-fluid mt-5">
+                        <div class="row d-flex justify-content-center align-items-center w-100">
+                            <div class="col-md-3 hour-forecast">
+                                <h6>12:00 AM</h6>
+                                <h4>20</h4>
+                            </div>
+                            <div class="col-md-3 hour-forecast">
+                                <h6>1:00 AM</h6>
+                                <h4>20</h4>
+                            </div>
+                            <div class="col-md-3 hour-forecast">
+                                <h6>2:00 AM</h6>
+                                <h4>20</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
