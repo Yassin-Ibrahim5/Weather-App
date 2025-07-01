@@ -155,6 +155,7 @@ footer .social-links a {
     margin-right: 10px;
     font-size: 1.4rem;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 footer .social-links a:hover {
@@ -248,8 +249,6 @@ body[data-theme="dark"] footer .social-links a:hover {
     background-color: #ffffff;
     color: black;
 }
-
-
 
 /*!*!*!*!*!*!*!*!*!*!*!* Media Queries *!*!*!*!*!*!*!*!*!*!*!*/
 

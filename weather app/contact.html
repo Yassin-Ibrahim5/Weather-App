@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather - Contact</title>
+</head>
+<body class="bg-body-secondary p-0 m-0" data-theme="light">
+
+<nav class="navbar navbar-expand-lg bg-body d-flex justify-content-between align-items-center position-sticky w-100 py-0">
+    <div class="container-fluid d-flex py-0">
+        <a class="navbar-brand logo d-flex align-items-center" href="#"><img src="images/favicon.png" alt="weather icon"
+                                                                             style="width: 70px;" id="navbar-icon">Weather</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link position-relative active mx-3" aria-current="page" href="#home">Home</a>
+                <a class="nav-link position-relative mx-3" href="#">News</a>
+                <a class="nav-link position-relative mx-3" href="#">Live Cameras</a>
+                <a class="nav-link position-relative mx-3" href="#">Photos</a>
+                <a class="nav-link position-relative mx-3" href="#">Contact</a>
+                <div class="dark-mode-logo">
+                    <input type="checkbox" id="mode" class="dark-mode-toggle position-absolute opacity-0">
+                    <label for="mode" class="switch position-absolute d-flex align-items-center">
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-sun"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<footer class="position-absolute w-100 bottom-0">
+    <div class="container-fluid bg-body text-center py-5 mt-5">
+        <div class="row mb-5">
+            <div class="col-lg-6 offset-lg-1 col-md-12 offset-md-0">
+                <div class="input-group">
+                    <input type="text" class="form-control"
+                           placeholder="Enter your email to subscribe for daily updates" aria-label="Email"
+                           aria-describedby="button-subscribe">
+                    <button class="btn btn-primary" type="button" id="button-subscribe">Subscribe</button>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 col-md-12 offset-md-0">
+                <div class="social-links d-flex">
+                    <a href="#" class="d-flex justify-content-center align-items-center text-center rounded-circle"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="d-flex justify-content-center align-items-center text-center rounded-circle"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="d-flex justify-content-center align-items-center text-center rounded-circle"><i
+                            class="fa-brands fa-google"></i></a>
+                    <a href="#" class="d-flex justify-content-center align-items-center text-center rounded-circle"><i
+                            class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="m-0 col-12 w-100 text-center fs-5 copyright-text">Copyright &copy; 2025. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
