@@ -147,6 +147,21 @@ main .main-content {
     right: -7%;
 }
 
+footer .social-links a {
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+    background-color: #212529;
+    color: #fff;
+}
+
 /*!*!*!*!*!*!*!*!*!*!*!* Dark Mode *!*!*!*!*!*!*!*!*!*!*!*/
 
 body[data-theme="dark"] {
@@ -170,7 +185,8 @@ body[data-theme="dark"] .navbar .container-fluid {
     background-color: #222;
 }
 
-body[data-theme="dark"] .main-content {
+body[data-theme="dark"] .main-content,
+body[data-theme="dark"] footer .container-fluid {
     background-color: #333 !important;
 }
 
@@ -179,11 +195,13 @@ body[data-theme="dark"] input.form-control:focus {
     box-shadow: 0 0 0 0.25rem rgba(10, 88, 202, 0.25) !important;
 }
 
-body[data-theme="dark"] .btn.btn-primary {
+body[data-theme="dark"] .btn.btn-primary,
+body[data-theme="dark"] .btn#button-subscribe {
     background-color: #0a58ca !important;
 }
 
-body[data-theme="dark"] .btn.btn-primary:hover {
+body[data-theme="dark"] .btn.btn-primary:hover,
+body[data-theme="dark"] .btn#button-subscribe:hover {
     background-color: #0a40ca !important;
     border-color: #0a40ca !important;
 }
@@ -211,14 +229,26 @@ body[data-theme="dark"] .day-forecast.today {
 body[data-theme="dark"] #city-name,
 body[data-theme="dark"] #date,
 body[data-theme="dark"] #welcome-msg,
-body[data-theme="dark"] #current-time {
+body[data-theme="dark"] #current-time,
+body[data-theme="dark"] footer .copyright-text {
     color: #aaa !important;
 }
 
 body[data-theme="dark"] h3.hourly-header,
-body[data-theme="dark"] .weather-details{
+body[data-theme="dark"] .weather-details {
     color: #ccc !important;
 }
+
+body[data-theme="dark"] footer .social-links a {
+    background-color: #aaa;
+    color: #333333;
+}
+
+body[data-theme="dark"] footer .social-links a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
 
 /*!*!*!*!*!*!*!*!*!*!*!* Media Queries *!*!*!*!*!*!*!*!*!*!*!*/
 
