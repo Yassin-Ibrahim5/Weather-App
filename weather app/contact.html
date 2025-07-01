@@ -27,11 +27,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link position-relative active mx-3" aria-current="page" href="#home">Home</a>
+                <a class="nav-link position-relative active mx-3" aria-current="page" href="index.html">Home</a>
                 <a class="nav-link position-relative mx-3" href="#">News</a>
                 <a class="nav-link position-relative mx-3" href="#">Live Cameras</a>
                 <a class="nav-link position-relative mx-3" href="#">Photos</a>
-                <a class="nav-link position-relative mx-3" href="#">Contact</a>
+                <a class="nav-link position-relative mx-3" href="#contact">Contact</a>
                 <div class="dark-mode-logo">
                     <input type="checkbox" id="mode" class="dark-mode-toggle position-absolute opacity-0">
                     <label for="mode" class="switch position-absolute d-flex align-items-center">
@@ -44,7 +44,46 @@
     </div>
 </nav>
 
-<footer class="position-absolute w-100 bottom-0">
+<main class="contact-main" id="contact">
+    <div class="container bg-white my-5 main-content text-center py-5 p-4">
+        <div class="row d-flex justify-content-center align-items-center w-100">
+            <div class="col-md-6 col-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.638444775074!2d31.255423575546416!3d29.961076722515916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584782ead906cd%3A0x6feb36b41789dfff!2sRoute%20academy!5e0!3m2!1sen!2seg!4v1751364146609!5m2!1sen!2seg"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6 col-12 text-start">
+                <h2 class="contact-title fw-semibold">Contact Us</h2>
+                <p class="contact-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus,
+                    facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit
+                    hic, ipsum sed!</p>
+                <form action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Name" class="form-control mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" placeholder="Email" class="form-control mb-3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Company" class="form-control mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" placeholder="Company Website" class="form-control mb-3">
+                        </div>
+                    </div>
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                </form>
+                <button class="btn btn-primary mt-3">Send Message</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer class="">
     <div class="container-fluid bg-body text-center py-5 mt-5">
         <div class="row mb-5">
             <div class="col-lg-6 offset-lg-1 col-md-12 offset-md-0">

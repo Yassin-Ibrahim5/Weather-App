@@ -163,6 +163,17 @@ footer .social-links a:hover {
     color: #fff;
 }
 
+/*!*!*!*!*!*!*!*!*!*!*!* Contact Us *!*!*!*!*!*!*!*!*!*!*!*/
+
+.contact-title, .contact-paragraph {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    padding: 15px;
+}
+
 /*!*!*!*!*!*!*!*!*!*!*!* Dark Mode *!*!*!*!*!*!*!*!*!*!*!*/
 
 body[data-theme="dark"] {
@@ -231,12 +242,14 @@ body[data-theme="dark"] #city-name,
 body[data-theme="dark"] #date,
 body[data-theme="dark"] #welcome-msg,
 body[data-theme="dark"] #current-time,
-body[data-theme="dark"] footer .copyright-text {
+body[data-theme="dark"] footer .copyright-text,
+body[data-theme="dark"] .contact-paragraph {
     color: #aaa !important;
 }
 
 body[data-theme="dark"] h3.hourly-header,
-body[data-theme="dark"] .weather-details {
+body[data-theme="dark"] .weather-details,
+body[data-theme="dark"] .contact-title {
     color: #ccc !important;
 }
 
