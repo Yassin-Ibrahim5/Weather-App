@@ -107,6 +107,11 @@ main .main-content {
     margin-left: 24px;
 }
 
+.hour-forecast {
+    height: 130px;
+    max-height: 130px;
+}
+
 .hour-forecast, .day-forecast {
     border: 2px solid #999;
     border-radius: 24px;
@@ -210,11 +215,8 @@ body[data-theme="dark"] #current-time {
     color: #aaa !important;
 }
 
-body[data-theme="dark"] .weather-details {
-    color: #ccc !important;
-}
-
-body[data-theme="dark"] h3.hourly-header {
+body[data-theme="dark"] h3.hourly-header,
+body[data-theme="dark"] .weather-details{
     color: #ccc !important;
 }
 
@@ -267,8 +269,8 @@ body[data-theme="dark"] h3.hourly-header {
     }
 
     .dark-mode-logo .switch {
-        position: static;
-        margin-left: 20px;
+        position: static !important;
+        margin-left: 20px !important;
     }
 
     .navbar-nav {
@@ -327,9 +329,9 @@ body[data-theme="dark"] h3.hourly-header {
     }
 
     .dark-mode-logo .switch {
-        position: static;
-        display: flex;
-        justify-content: flex-start;
+        position: static !important;
+        display: flex !important;
+        justify-content: flex-start !important;
     }
 
     .navbar-brand.logo {
